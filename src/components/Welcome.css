@@ -1,0 +1,98 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 2rem;
+  padding-top: 6.25rem;
+  scroll-margin-top: 9.375rem;
+  width: 80%;
+}
+
+.welcome-skydays {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-skydays > img {
+  width: 10rem;
+}
+.welcome-skydays h1 {
+  font-size: 5.25rem;
+  font-family: "Syne";
+}
+.welcome-skydays p {
+  font-size: 1.25rem;
+  color: #a7cbd3;
+}
+.welcome > a {
+  background-color: #142850;
+  color: white;
+  padding: 0.75rem 3rem;
+  font-size: 1.25rem;
+
+  border: none;
+  border-radius: 50px;
+  position: relative;
+}
+.welcome > a::after,
+.welcome > a::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #0c7b93 50%, white);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 50px;
+  animation: 3s spin linear infinite;
+}
+.welcome > a::before {
+  filter: blur(1.5rem);
+  opacity: 0.75;
+}
+.welcome > a:hover::before,
+.welcome > a:hover::after {
+  animation-play-state: paused;
+}
+
+.welcome-footer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #0c7b93;
+  width: 100%;
+}
+.welcome-footer > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.canvas-background {
+  position: absolute;
+  outline: none;
+  border: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}

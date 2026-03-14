@@ -1,0 +1,185 @@
+header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 10%;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(25px);
+  background: #142850cc;
+
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+header > a > img {
+  width: 5rem;
+  height: 5rem;
+}
+
+header > nav {
+  grid-column: 2/3;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1.25rem;
+}
+header > nav > button {
+  background-color: transparent;
+  border: none;
+}
+
+header > .countdown {
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.55rem 0.8rem;
+  border-radius: 14px;
+  background: linear-gradient(
+    145deg,
+    rgba(12, 123, 147, 0.28),
+    rgba(20, 40, 80, 0.78)
+  );
+  border: 1px solid rgba(0, 168, 204, 0.45);
+  box-shadow: 0px 0px 14px rgba(12, 123, 147, 0.45);
+}
+
+header > .countdown > .countdown-title {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #9de9ff;
+}
+
+header > .countdown .countdown-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+}
+
+header > .countdown .countdown-time > div {
+  min-width: 2.8rem;
+  text-align: center;
+}
+
+header > .countdown .countdown-time strong {
+  display: block;
+  font-size: 1.15rem;
+  line-height: 1;
+  color: #ffffff;
+}
+
+header > .countdown .countdown-time small {
+  display: block;
+  margin-top: 0.12rem;
+  font-size: 0.62rem;
+  color: #bdefff;
+}
+
+header > .basvur {
+  background-color: #142850;
+  padding: 0.625rem 3.125rem;
+  font-size: 1.25rem;
+
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px #0c7b93;
+
+  transition: all 0.3s ease-in-out;
+  grid-column: 4/5;
+}
+
+header > .basvur:hover {
+  box-shadow: 0px 0px 20px #0c7b93;
+}
+header > .basvur:active {
+  transform: scale(95%);
+}
+
+header > h1 {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  header {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-rows: auto auto;
+    row-gap: 0.75rem;
+    padding: 0.9rem 1rem;
+  }
+
+  header > nav {
+    display: none;
+  }
+
+  header > .countdown {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    justify-self: center;
+    width: min(100%, 22rem);
+  }
+
+  header > h1 {
+    display: block;
+    font-family: Syne;
+    text-shadow: 0px 0px 16px #00a8cc;
+    font-size: clamp(2rem, 8vw, 3.2rem);
+    font-weight: 600;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  header > .basvur {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding: 0.625rem 1rem;
+  }
+
+  header > .header-logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  header > .header-logo {
+    grid-column: 1/2;
+  }
+
+  header > .basvur {
+    grid-column: 2/3;
+    justify-self: end;
+  }
+
+  header > h1 {
+    grid-column: 1/3;
+  }
+
+  header > .countdown {
+    grid-column: 1/3;
+    width: 100%;
+  }
+
+  header > .countdown .countdown-time {
+    gap: 0.3rem;
+  }
+
+  header > .countdown .countdown-time > div {
+    min-width: 2.45rem;
+  }
+
+  header > .countdown .countdown-time strong {
+    font-size: 1rem;
+  }
+}

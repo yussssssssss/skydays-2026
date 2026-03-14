@@ -1,0 +1,84 @@
+.flow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  gap: 3rem;
+  scroll-margin-top: 9.375rem;
+}
+
+.program {
+  grid-column: 1/4;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  padding: 1rem 0rem;
+}
+.program::before, .program::after {
+  content: "";
+  flex: 1;
+  border-top: 2px solid #0c7b93;
+  margin: 0px 0.75rem;
+}
+
+.speaker-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+figure.speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+figure.speaker > img {
+  width: 15rem;
+  object-fit:scale-down;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  background-color: #142850;
+  border-radius: 25px;
+  transition: box-shadow 0.3s ease-in;
+}
+figure.speaker > img:hover {
+  box-shadow: 0px 0px 25px #0c7b93;
+}
+
+figure.speaker > figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+figure.speaker > figcaption > h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+figure.speaker > figcaption > p {
+  color: #00a8cc;
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  max-width: 19rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .speaker-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .speaker-container {
+    justify-content: center;
+  }
+}
