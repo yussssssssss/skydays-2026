@@ -1,8 +1,12 @@
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 import "./Questions.css";
 
 function Questions() {
-  const [data, setData] = useState([
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const data = [
     {
       soru: "Etkinliğe nereden başvurabilirim?",
       cevap: (
@@ -77,33 +81,50 @@ function Questions() {
       soru: "Zirveye katılımım sonunda sertifika verilecek mi?",
       cevap:
         "Evet, 7 oturumdan en az 5’ine katılan katılımcılara online sertifika verilecektir.",
-      acik: false,
     },
-  ]);
+  ];
 
-  const paragrafAc = (index) => {
-    const newData = [...data];
-    newData[index].acik = !newData[index].acik;
-    setData(newData);
+  const toggleQuestion = (index) => {
+    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   return (
     <article className="sss">
       <h2>Sıkça Sorulan Sorular</h2>
-      {data.map((item, i) => (
-        <button key={i} onClick={() => paragrafAc(i)}>
-          <div>
-            {item.soru}
-            <span>{item.acik ? "-" : "+"}</span>
-          </div>
-          <p className={`cevap ${item.acik ? "acik" : ""}`}>
-            <br />
-            {item.cevap}
-            <br />
-            <br />
-          </p>{" "}
-        </button>
-      ))}
+      {data.map((item, i) => {
+        const isOpen = openIndex === i;
+
+        return (
+          <motion.div key={i} className="question-item" layout>
+            <button
+              className="question-button"
+              onClick={() => toggleQuestion(i)}
+              aria-expanded={isOpen}
+              aria-controls={`faq-panel-${i}`}
+            >
+              <span>{item.soru}</span>
+              <ChevronDown
+                className={`question-icon ${isOpen ? "open" : ""}`}
+              />
+            </button>
+
+            <AnimatePresence initial={false}>
+              {isOpen && (
+                <motion.div
+                  id={`faq-panel-${i}`}
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.36, ease: [0.22, 1, 0.36, 1] }}
+                  className="cevap-wrapper"
+                >
+                  <div className="cevap">{item.cevap}</div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
+        );
+      })}
     </article>
   );
 }
