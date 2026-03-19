@@ -33,7 +33,7 @@ function Questions() {
     {
       soru: "Etkinlik nerede ve ne zaman gerçekleşecek?",
       cevap:
-        "SKYDAYS, 14-15 Mart tarihlerinde Yıldız Teknik Üniversitesi Davutpaşa Kampüsü Tarihi Hamam’da gerçekleşecektir. Zirve, 14 Mart günü 12.30’da başlayıp 19.00’da biterken yarışma ise 14 Mart günü 21.00’da başlayıp 15 Mart günü 17.00’da bitecektir.",
+        "SKYDAYS, 27-28 Mart tarihlerinde Yıldız Teknik Üniversitesi Davutpaşa Kampüsü Tarihi Hamam’da gerçekleşecektir. Zirve, 27 Mart günü 12.30’da başlayıp 19.00’da biterken yarışma ise 27 Mart günü 21.00’da başlayıp 28 Mart günü 17.00’da bitecektir.",
       acik: false,
     },
     {
