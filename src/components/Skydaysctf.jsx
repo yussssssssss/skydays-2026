@@ -22,7 +22,7 @@ function Skydaysctf() {
           tarafından gerçekleştirilecek olan CTF, aynı zamanda SKYDAYS tarihinde
           de ikinci olma özelliğini taşımaktadır.
         </p>
-        <a href="https://skyl.app/skydays-ctf-basvuru-formu">
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=CClghVvhukORSDi8dzqBbsDsVB3oDnVBpoIpI_nbcn9UQk0yUjRCVlFXQzlPTklIWkhFWTRTRFVHVy4u&route=shorturl&fbclid=PAT01DUAQnWiZleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadKLQFVS6bFuqV9Tr6zhJJ_7mW1mqOspLyQW4R634Ewh477jQG8DWRQikUXuQ_aem_hZLTJxyQ4zc_KJ-k-19LHg">
           Yarışmaya Başvur
         </a>
       </section>

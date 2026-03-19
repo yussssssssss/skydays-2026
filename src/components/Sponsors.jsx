@@ -1,8 +1,4 @@
 import "./Sponsors.css";
-import yktlogo from "../assets/ykt.jpg";
-import aselsanlogo from "../assets/ASELSAN_logo.jpg";
-import siemenslogo from "../assets/siemens.png";
-import infinitumlogo from "../assets/infinitum_it.png";
 
 function Sponsors() {
   return (

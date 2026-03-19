@@ -8,7 +8,7 @@ function Questions() {
       cevap: (
         <>
           <a
-            href="https://skyl.app/skydays-katilimci-formu"
+            href="https://forms.office.com/pages/responsepage.aspx?id=CClghVvhukORSDi8dzqBbsDsVB3oDnVBpoIpI_nbcn9UMUxaTFVITUFEM1JZVENOVURDU0NOQ0lLSS4u&route=shorturl&fbclid=PAT01DUAQnWj9leHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAae-klX1TXsspVincQXPU-zQXzcl5VK2F0lBIGlDuNpYcFz1ZgUS8It6OhYdWA_aem_mlirJEwb6Gge8j0xs7X7gg"
             target="_blank"
             style={{ textDecoration: "underline" }}
           >
@@ -16,7 +16,7 @@ function Questions() {
           </a>
           <br />
           <a
-            href="https://skyl.app/skydays-ctf-basvuru-formu"
+            href="https://forms.office.com/pages/responsepage.aspx?id=CClghVvhukORSDi8dzqBbsDsVB3oDnVBpoIpI_nbcn9UQk0yUjRCVlFXQzlPTklIWkhFWTRTRFVHVy4u&route=shorturl&fbclid=PAT01DUAQnWiZleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadKLQFVS6bFuqV9Tr6zhJJ_7mW1mqOspLyQW4R634Ewh477jQG8DWRQikUXuQ_aem_hZLTJxyQ4zc_KJ-k-19LHg"
             target="_blank"
             style={{ textDecoration: "underline" }}
           >

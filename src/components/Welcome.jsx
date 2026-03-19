@@ -12,10 +12,12 @@ function Welcome() {
         <p>Türkiye'nin En Büyük Siber Güvenlik Etkinliği</p>
       </div>
 
-      <a href="https://skyl.app/skydays-katilimci-formu">Hemen Başvur!</a>
+      <a href="https://forms.office.com/pages/responsepage.aspx?id=CClghVvhukORSDi8dzqBbsDsVB3oDnVBpoIpI_nbcn9UMUxaTFVITUFEM1JZVENOVURDU0NOQ0lLSS4u&route=shorturl&fbclid=PAT01DUAQnWj9leHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAae-klX1TXsspVincQXPU-zQXzcl5VK2F0lBIGlDuNpYcFz1ZgUS8It6OhYdWA_aem_mlirJEwb6Gge8j0xs7X7gg">
+        Hemen Başvur!
+      </a>
 
       <div className="welcome-footer">
-        <p>27 Mart 2026</p>
+        <p>27 - 28 Mart 2026</p>
         <a href="https://maps.app.goo.gl/RpLkG3WoQG2CfdFH7" target="_blank">
           YTÜ Davutpaşa <br /> Tarihi Hamam
         </a>

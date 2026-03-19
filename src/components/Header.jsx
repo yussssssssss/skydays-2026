@@ -89,7 +89,10 @@ function Header() {
         </div>
       </div>
       <h1>SKYDAYS</h1>
-      <a className="basvur" href="https://skyl.app/skydays-katilimci-formu">
+      <a
+        className="basvur"
+        href="https://forms.office.com/pages/responsepage.aspx?id=CClghVvhukORSDi8dzqBbsDsVB3oDnVBpoIpI_nbcn9UMUxaTFVITUFEM1JZVENOVURDU0NOQ0lLSS4u&route=shorturl&fbclid=PAT01DUAQnWj9leHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAae-klX1TXsspVincQXPU-zQXzcl5VK2F0lBIGlDuNpYcFz1ZgUS8It6OhYdWA_aem_mlirJEwb6Gge8j0xs7X7gg"
+      >
         Başvur
       </a>
     </header>
